@@ -111,12 +111,38 @@ main > div:hover {
     animation: rotation1 1.5s linear infinite;
 }
 
+.loader-6 {
+    border: 3px solid white;
+    border-bottom-color: transparent;
+    position: relative;
+    animation: rotation1 1.5s linear infinite;
+}
+
+.loader-6:before {
+    content: '';
+    position: absolute;
+    inset: 9px;
+    border: 3px solid #FF3D00;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: rotationBack 0.5s linear infinite;
+}
+
 @keyframes rotation1 {
     0% {
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
     }
 }
 
@@ -138,6 +164,3 @@ main > div:hover {
         grid-template-rows: 1fr;
     }
 }
-
-
-
