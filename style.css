@@ -159,6 +159,11 @@ main > div:hover {
     animation: rotationBack 1s linear infinite;
 }
 
+.loader-9 {
+    border: 5px dotted white;
+    animation: rotation1 2s linear infinite;
+}
+
 
 @keyframes rotation1 {
     0% {
@@ -196,4 +201,3 @@ main > div:hover {
         grid-template-rows: 1fr;
     }
 }
-
