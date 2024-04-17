@@ -128,6 +128,24 @@ main > div:hover {
     animation: rotationBack 0.5s linear infinite;
 }
 
+.loader-7 {
+    border: 2px solid #FF3D00;
+    position: relative;
+    animation: rotation1 1s linear infinite;
+}
+
+.loader-7:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 16px;
+    bottom: 32px;
+    left: 16px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+
 @keyframes rotation1 {
     0% {
         transform: rotate(0deg);
