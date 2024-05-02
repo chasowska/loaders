@@ -207,6 +207,12 @@ main > div:hover {
     animation-delay: 1s;
 }
 
+.loader-14 {
+    border-right: 3px solid white;
+    border-bottom: 3px solid transparent;
+    animation: rotation1 1s linear infinite;
+}
+
 @keyframes scale3 {
     0% {
         transform: scale(0);
@@ -317,3 +323,4 @@ main > div:hover {
 }
 
 /*.............................................................................................................................................................................*/
+
