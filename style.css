@@ -220,6 +220,42 @@ main > div:hover {
     animation: rotation1 1s linear infinite;
 }
 
+.loader-16 {
+    background-color: white;
+    overflow: hidden;
+}
+
+.loader-16:before {
+    content: "";
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    background-color: #FF3D00;
+    top: 0;
+    animation: translate1 2s linear infinite alternate;
+}
+
+.loader-16:after {
+    content: "";
+    position: absolute;
+    background-color: #003b4a;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 9px;
+    right: 9px;
+}
+
+@keyframes translate1 {
+    0%, 10% {
+        transform: translateY(48px);
+    }
+
+    90%, 100% {
+        transform: translate(0);
+    }
+}
+
 @keyframes scale3 {
     0% {
         transform: scale(0);
@@ -330,4 +366,3 @@ main > div:hover {
 }
 
 /*.............................................................................................................................................................................*/
-
