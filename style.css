@@ -261,6 +261,26 @@ main > div:hover {
     animation-delay: 1s;
 }
 
+.loader-18 {
+    background-color: white;
+}
+
+.loader-18:after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 5px solid transparent;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    animation: skLinRotate 1s ease-in-out infinite alternate;
+}
+
+@keyframes skLinRotate {
+    95%, 100% {
+        transform: rotate(840deg)
+    }
+}
+
 @keyframes translate1 {
     0%, 10% {
         transform: translateY(48px);
