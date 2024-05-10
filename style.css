@@ -246,6 +246,21 @@ main > div:hover {
     right: 9px;
 }
 
+.loader-17:after,
+.loader-17:before {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    animation: scale3 2s linear infinite;
+}
+
+.loader-17:after {
+    animation-delay: 1s;
+}
+
 @keyframes translate1 {
     0%, 10% {
         transform: translateY(48px);
