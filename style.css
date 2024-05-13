@@ -1,27 +1,10 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    width: 100%;
-    height: 80px;
-    position: sticky;
-    background-color: #0d161b;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main {
+.container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
 }
 
-main > div {
+.container > div {
     height: 360px;
     display: flex;
     justify-content: center;
@@ -37,7 +20,7 @@ main > div {
     background-color: #03333f;
 }
 
-main > div:hover {
+.container > div:hover {
     background-color: #002630;
 }
 
