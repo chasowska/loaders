@@ -24,9 +24,34 @@
     background-color: #002630;
 }
 
-.loader-type1 {
-    width: 48px;
-    height: 48px;
+.loader-type2 {
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
+    background-color: white;
     position: relative;
 }
+
+.loader-1 {
+    box-shadow: 32px 0 white, -32px 0 white;
+    animation: flash .5s linear infinite alternate;
+}
+
+@keyframes flash {
+    0% {
+        background-color: #FFF2;
+        box-shadow: 32px 0 #FFF2, -32px 0 #FFF;
+    }
+    50% {
+        background-color: #FFF;
+        box-shadow: 32px 0 #FFF2, -32px 0 #FFF2;
+    }
+    100% {
+        background-color: #FFF2;
+        box-shadow: 32px 0 #FFF, -32px 0 #FFF2;
+    }
+}
+
+/*..............................................................................................................................................................................*/
+
+
